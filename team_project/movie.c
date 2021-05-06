@@ -11,3 +11,41 @@ int selectMenu(){
 
         return menu;
 }
+
+int createMovie(Movie *m){
+        getchar();
+        printf("영화 제목은? ");
+        scanf("%[^\n]s", m->movie_name);
+        getchar();
+        printf("영화 감독은? ");
+        scanf("%s", m->director);
+        printf("영화 별점은? ");
+        scanf("%f", &m->star);
+        printf("영화 장르는? ");
+        scanf("%s", m->genre);
+        printf("개봉 날짜는? ");
+        scanf("%s", m->date);
+        printf("영화 순위는? ");
+        scanf("%d", &m->ranking);
+        printf("=> 추가됨!\n");
+
+        return 1;
+}
+
+void readMovie(Movie m){
+        printf("%s %s %.1f %s %s %d\n", 
+        m.movie_name, m.director, m.star, m.genre, m.date, m.ranking);
+}
+
+int selectDataNo(Movie *m, int count){
+        return 0;
+}
+
+void updateMovie(Movie *m){
+       
+}
+int deleteMovie(Movie *m){
+        return 0;
+}
+void listMovie(Movie *m, int count){}
+

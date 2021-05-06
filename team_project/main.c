@@ -1,5 +1,6 @@
 // main.c
 #include "movie.h"
+#include "movie.c"
 
 int main(){
         Movie mlist[100];
@@ -17,7 +18,8 @@ int main(){
                         }
                 }
                 if(menu == 1){
-                        listMovie(mlist, index);
+                        readMovie(*mlist);
+                        // listMovie(mlist, index);
                 }
                 else if(menu == 2){
                         count += createMovie(&mlist[index++]);
