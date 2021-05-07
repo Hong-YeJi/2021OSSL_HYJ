@@ -42,10 +42,28 @@ int selectDataNo(Movie *m, int count){
 }
 
 void updateMovie(Movie *m){
-       
+        getchar();
+        printf("수정할 영화 제목은? ");
+        scanf("%[^\n]s", m->movie_name);
+        getchar();
+        printf("수정할 영화 감독은? ");
+        scanf("%s", m->director);
+        printf("수정할 영화 별점은? ");
+        scanf("%f", &m->star);
+        printf("수정할 영화 장르는? ");
+        scanf("%s", m->genre);
+        printf("수정할 개봉 날짜는? ");
+        scanf("%s", m->date);
+        printf("수정할 영화 순위는? ");
+        scanf("%d", &m->ranking);
+        printf("=> 수정됨!\n");
+
+        return 1;
 }
 int deleteMovie(Movie *m){
         return 0;
 }
-void listMovie(Movie *m, int count){}
+void listMovie(Movie *m, int count){
+        
+}
 
