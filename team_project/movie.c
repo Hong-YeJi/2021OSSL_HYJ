@@ -60,9 +60,11 @@ void updateMovie(Movie *m){
 
         return 1;
 }
+
 int deleteMovie(Movie *m){
         return 0;
 }
+
 void listMovie(Movie *m, int count){
         
 }
