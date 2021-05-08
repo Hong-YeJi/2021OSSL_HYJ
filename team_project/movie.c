@@ -33,7 +33,8 @@ int createMovie(Movie *m){
 }
 
 void readMovie(Movie m){
-        printf("%s %s %.1f %s %s %d\n", 
+        printf("Movie Title\t Director Star Genre Date Ranking\n");
+        printf("%15s %10s %.1f %6s %s %2d\n",
         m.movie_name, m.director, m.star, m.genre, m.date, m.ranking);
 }
 
@@ -58,14 +59,13 @@ void updateMovie(Movie *m){
         scanf("%d", &m->ranking);
         printf("=> 수정됨!\n");
 
-        return 1;
 }
 
 int deleteMovie(Movie *m){
         return 0;
+
 }
 
 void listMovie(Movie *m, int count){
-        
-}
 
+}
